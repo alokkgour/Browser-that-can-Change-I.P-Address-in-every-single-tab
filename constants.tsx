@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { VirtualProxy } from './types';
 
 export const COUNTRIES = [
   { name: 'United States', code: 'US', cities: ['New York', 'Los Angeles', 'Chicago'] },
@@ -15,6 +16,21 @@ export const SAMPLE_VIDEOS = [
   "https://www.w3schools.com/html/mov_bbb.mp4",
   "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
   "https://vjs.zencdn.net/v/oceans.mp4"
+];
+
+export const PRESET_PROXIES: { name: string, proxy: VirtualProxy }[] = [
+  {
+    name: "Ultra-Fast US East",
+    proxy: { ip: "104.26.12.31", country: "United States", city: "New York", isp: "Verizon Enterprise", latency: 12 }
+  },
+  {
+    name: "EU Privacy Node",
+    proxy: { ip: "185.156.172.44", country: "Germany", city: "Berlin", isp: "Deutsche Telekom", latency: 24 }
+  },
+  {
+    name: "Asian Gaming Hub",
+    proxy: { ip: "45.76.102.11", country: "Japan", city: "Tokyo", isp: "NTT Communications", latency: 8 }
+  }
 ];
 
 export const generateRandomIP = () => {

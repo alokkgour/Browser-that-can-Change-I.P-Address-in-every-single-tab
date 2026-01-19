@@ -15,6 +15,18 @@ export interface VideoInstance {
   ip: string; // Specific IP if overridden
 }
 
+export interface TabGroup {
+  id: string;
+  name: string;
+  color: string;
+}
+
+export interface ProxyBookmark {
+  id: string;
+  name: string;
+  proxy: VirtualProxy;
+}
+
 export interface BrowserTab {
   id: string;
   title: string;
@@ -22,6 +34,7 @@ export interface BrowserTab {
   proxy: VirtualProxy;
   videos: VideoInstance[];
   isActive: boolean;
+  groupId?: string;
 }
 
 export interface NetworkStats {
