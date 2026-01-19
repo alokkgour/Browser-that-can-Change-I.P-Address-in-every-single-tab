@@ -1,0 +1,8 @@
+{
+  "name": "CyberProxy AI Browser",
+  "description": "A high-performance simulated multi-tab browser environment featuring per-tab IP rotation, virtualized identities, and multi-video concurrent streaming panels with AI-driven network optimization.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
